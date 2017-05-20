@@ -1,0 +1,17 @@
+<h2>Code Experience</h2>
+<hr>
+<h3>School</h3>
+<h4>Prime Digital Academy</h4>
+
+<h4>University of Minnesota: Twin Cities</h4>
+
+<hr>
+<h3>Github</h3>
+Username: {{cc.githubUser}}
+<hr>
+<h4>Repository Links</h4>
+<div ng-repeat="repo in cc.repos">
+  <div>
+    <a class="repos" href="{{repo.url}}">{{repo.name}}</a>
+  </div>
+</div>

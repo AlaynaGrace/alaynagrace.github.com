@@ -1,0 +1,32 @@
+a{
+  margin-left: 5px;
+  margin-bottom: 10px;
+  border: 5px solid #0d2c40;
+  border-radius: 4px;
+  background-color: #0d2c40;
+  color: honeydew;
+  text-decoration: none;
+
+}
+a:hover,a:focus,a:active{
+  color: grey;
+  text-decoration: none;
+}
+
+.links{
+  text-align: center;
+}
+.jumbotron{
+  text-align: center;
+}
+
+.repos{
+  color: blue;
+  background-color: white;
+  border: none;
+
+
+}
+.repos:hover,.repos:focus,.repos:active{
+  color: grey;
+}

@@ -4,9 +4,24 @@
     <meta charset="utf-8">
     <title></title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
-    <script src="scripts/github.service.js" charset="utf-8"></script>
+    <script src="scripts/services/github.service.js" charset="utf-8"></script>
+    <script src="scripts/controllers/about.controller.js" charset="utf-8"></script>
+    <script src="scripts/controllers/code.controller.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <base href="/">
   </head>
   <body ng-app="myApp">
+    <div class="jumbotron">
+      <h1>Alayna Buysse</h1>
+    </div>
+    <div class="links">
+      <a href="/">About Me</a>
+      <a href="/code">Code Experience</a>
+    </div>
+
+    <ng-view></ng-view>
   </body>
 </html>
