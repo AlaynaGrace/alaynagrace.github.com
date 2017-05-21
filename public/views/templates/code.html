@@ -1,17 +1,30 @@
-<h2>Code Experience</h2>
-<hr>
-<h3>School</h3>
-<h4>Prime Digital Academy</h4>
 
-<h4>University of Minnesota: Twin Cities</h4>
 
-<hr>
-<h3>Github</h3>
-Username: {{cc.githubUser}}
-<hr>
-<h4>Repository Links</h4>
-<div ng-repeat="repo in cc.repos">
-  <div>
-    <a class="repos" href="{{repo.url}}">{{repo.name}}</a>
+<div class="about">
+  <div class="textDiv">
+    <h2>Code Experience</h2>
+    <hr>
+    <h3>School</h3>
+    <h4>Prime Digital Academy</h4>
+    <p>I came to Prime to not only learn how to code but to also develop my soft skills. I like Prime specifically because they teach skills that are valued on the job. I can actually see how I will be using everything I learn in an actual job.
+    I have currently learned the full stack. So far, we have learned HTML, CSS, Javascript, Node.js, Express, MongoDB, Passport, and pSQL and use these languages and libraries to create the front end and back end of simple applications.
+
+    Projects:
+    At Prime I will be doing two projects:
+    1. A solo project
+    2. A group project</p>
+
+    <h4>University of Minnesota: Twin Cities</h4>
+
+    <hr>
+    <h3>Github</h3>
+    Username: {{cc.githubUser}}
+    <br>
+    <h4>Repository Links</h4>
+    <div ng-repeat="repo in cc.repos">
+      <div>
+        <a class="repos" href="{{repo.url}}">{{repo.name}}</a>
+      </div>
+    </div>
   </div>
 </div>
