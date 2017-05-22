@@ -9,6 +9,7 @@ a{
   color: honeydew;
   text-decoration: none;
   border-bottom: 1px solid grey;
+  font-size: 20px;
 }
 a:focus,a:active{
   color: grey;

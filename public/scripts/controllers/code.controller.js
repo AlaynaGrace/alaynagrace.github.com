@@ -4,6 +4,7 @@ myApp.controller('CodeController',function(GithubAPI){
   vm.getProfile = function(){
     GithubAPI.githubProfile().then(function(data){
       vm.githubUser = data.login;
+      vm.html_url = data.html_url;
     });
   };
 
