@@ -89,9 +89,11 @@ h2{
   background-color: grey;
 }
 .education{
-  background-size: cover;
-  padding: 15%;
-  background-image: url('http://www.lcchamber.com/wp-content/uploads/2016/07/education-3.jpg');
+  /*background-size: cover;*/
+  /*padding-top: 2%;
+  padding-bottom: 5%;*/
+  background-color: #acedee;
+  /*background-image: url('http://www.lcchamber.com/wp-content/uploads/2016/07/education-3.jpg');*/
 }
 
 h1{
