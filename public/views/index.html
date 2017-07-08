@@ -12,17 +12,176 @@
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
     <base href="/">
   </head>
   <body ng-app="myApp">
-    <div class="jumbotron">
-      <h1>Alayna Buysse</h1>
-    </div>
     <div class="links">
-      <a href="/">About Me</a>
-      <a href="/code">Code Experience</a>
+      <a href="#aboutMe">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+    <!-- <div class="jumbotron"> -->
+      <!-- <h1>Alayna Buysse</h1> -->
+      <div class="imgDiv">
+        <h1>ALAYNA BUYSSE</h1>
+        <h4>Software Developer | Full Stack | Cat Enthusiast</h4>
+        <img src="img/alayna-png-2.png">
+      </div>
+    <!-- </div> -->
+
+    <div id="aboutMe">
+      <div class="about">
+        <div class="textDiv">
+          <h2>About Me</h2>
+          <hr>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;I started coding while a student in college. In my Intro to Mechanical Engineering
+          class, I had to make a robot that used an Arduino. This was the first time I had ever
+          really coded something and I happened to love it! The next semester I started my journey
+          in computer science. I took a year of computer science courses where I learn basic
+          computer science theory in Python and Java. Also during this year, I was able to work on
+          side projects for a couple different companies. These projects are detailed in the code
+          experience section of this website. A year into my computer science major,
+          I found Prime Digital Academy. Although I liked the theory I was learning in school,
+          I wanted to learn more real world skills and hoped to shorten my schooling as it was
+          getting rather expensive. Prime offered everything I was looking for in a school. Not
+          only was I learning how to program on the MEAN stack, I was also developing my soft skills.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;I am currently a student at Prime Digital Academy. So far, I have completed tier 1,
+          which is the first six weeks of class where we learn the basics of Javascript on codecademy.
+          I have almost completed tier 2, which is seven weeks of in person lectures. In these lectures,
+          we learn about the MEAN/SEAN stack. After these seven weeks, we are able to create fullstack
+          applications and we are able to deploy them to the internet using Heroku and mLab. My next
+          step is tier 3. In tier 3, it is seven weeks of projects. The first two weeks is spent
+          on a solo project. Currently, I am planning out what my solo project is going to be.</p>
+        </div>
+      </div>
     </div>
 
-    <ng-view></ng-view>
+    <div id="education" ng-controller="CodeController as cc">
+      <div class="education">
+      <h2 style="color:white; font-size:70px;">Education</h2>
+      </div>
+      <div class="about">
+        <div class="textDiv">
+          <!-- <h2>Education</h2> -->
+          <!-- <hr> -->
+          <h3><strong><b>Prime Digital Academy</b></strong></h3>
+          <p>I came to Prime to not only learn how to code but to also develop my soft skills. I like Prime specifically because they teach skills that are valued on the job. I can actually see how I will be using everything I learn in an actual job.
+          I have currently learned the full stack. We have learned HTML, CSS, Javascript, Node.js, Express, MongoDB, Passport, and pSQL and use these languages and libraries to create the front end and back end of web applications.
+      </p>
+      <br>
+          <h3><strong><b>University of Minnesota: Twin Cities</b></strong></h3>
+          <p>At the University of Minnesota, I took the following relevant classes:
+            <ul>
+              <li>ME 2011: Into to mechanical engineering
+                <ul>
+                  <li>Final project was a working robot. I had to build the structure, code an Arduino (C programming), and
+                  set up a circuit on a solderless breadboard.</li>
+                </ul>
+              </li>
+              <li>CSCI 1133: Intro to programming
+              <ul>
+                <li>Learned basic programming skills in Python</li>
+              </ul></li>
+              <li>CSCI 1933: Intro to algorithms and data structures
+              <ul>
+                <li>Learned how to create basic data structures and algorithms such as binary search trees, and merge
+                sorting in Java</li>
+              </ul></li>
+              <li>CSCI 2011: Discrete Structures</li>
+              <li>CSCI 2033: Elementary Computer Linear Algebra
+              <ul>
+                <li>Used Matlab to do basic programming and create 3D structures</li>
+              </ul></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="jumbotron experience">
+
+    </div>
+        <div id="projects" ng-controller="CodeController as cc">
+          <div class="about">
+            <div class="textDiv">
+              <h2>Projects</h2>
+              <hr>
+              <p>While at Prime Digital Academy, I did the following projects:</p>
+              <ul>
+                <li><b>Our Hobby Farm</b></li>
+                <ul>
+                  <li>Our Hobby Farm is a web application designed to help keep track of pet care.</li>
+                  <li>Users can sign into households and see all of the pets in their households. From there, they can add new pets, update existing pets, and send texts to the other users in the household saying that they have completed certain care tasks.</li>
+                  <li>Technology used: MongoDB, Express, AngularJS, Node.js, Passport, JavaScript, Twilio, and Nodemailer.</li>
+                  <li>See it in action: <a href="https://ourhobbyfarm.herokuapp.com/" class="repos">Our Hobby Farm</a></li>
+                </ul>
+                <li><b>Westonka Soar</b></li>
+                <ul>
+                  <li>Westonka’s current process is to have teachers hand out SOAR slips to students and have the students fill the slips out. The students then bring the slips to the office where the principal does an end of week drawing out of all the slips. The office then sends back all of the slips to each of the homerooms where the teachers can do drawings for just their classroom students.</li>
+                  <li>We built an application to help automate their current prize drawing system. With our application, students will be able to enter their SOAR slips and from there, the admin will be able to do school-wide drawings for prizes while homeroom teachers will be able to do classroom drawings.</li>
+                  <li>Technology used: pSQL, Express, AngularJS, Node.js, Google OAuth, JavaScript, csvtojson, jsPDF, Heroku, and Bootstrap</li>
+                  <li>See it in action: <a href="https://westonkasoar.herokuapp.com" class="repos">Westonka Soar</a></li>
+                </ul>
+              </ul>
+              <p>While at the University of Minnesota, I did the following side projects:
+              <ul>
+                <li><strong><b>Cane's FM</b></strong><ul>
+                  <li>At Cane's, I have also had the oppurtunity to work on special coding projects. The first
+                  project, currently called Cane's FM is essentially a biased randomizer. At Cane's, we have
+                  five different areas of emphasis that we need to focus on. The managers go into an excel
+                  file and rank different issues that need to be fixed in each area of emphasis. Then, my
+                  code takes those ranked lists in, randomly picks two of those issues, and prints out the
+                  issues it picks. The process is not completely random, however, as the issues closer to the
+                  top of the list are more likely to be printed out compared to issues that are lower on the
+                  list. The list of picked issues is printed out and displayed in the kitchen and the front of
+                  the house so that everyone can look through the issues and work on them. </li>
+                </ul></li>
+                <li>
+                  <strong><b>Configurator</b></strong>
+                  <ul>
+                    <li>My current project is called a Configurator. This project is being done for the company
+          my dad works for, FleetPride. It is an program that asks questions, and, depending on how
+          the questions are answered, produces a part number. It does this for several different
+          categories including pumps and cab controls. It is expected to be used by employees who
+          take orders by phone. They will be able to get all of the part numbers while also being
+          able to look up those part numbers to see if they have those specfic parts in stock. They
+          will be looking up part numbers in their own system that FleetPride already has. The
+          project is still in the beginning stages, however, a fully working model is essentially
+          completed.</li>
+                  </ul>
+                </li>
+              </ul></p>
+
+              <!-- <br>
+              <h4>Repository Links</h4>
+              <div ng-repeat="repo in cc.repos">
+                <div>
+                  <a class="repos" href="{{repo.html_url}}">{{repo.name}}</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+    <div class="jumbotron experience">
+
+    </div>
+
+    <div id="contact" ng-controller="CodeController as cc">
+      <div class="about">
+        <div class="textDiv">
+          <h2>Contact Me</h2>
+          <hr>
+          <h3><b>Email:</b> alaynagrace@comcast.net</h3>
+          <h3><b>Phone Number:</b> (612)708-2836</h3>
+          <h3><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/alaynabuysse/" style="color:blue; font-size:20px;">https://www.linkedin.com/in/alaynabuysse/</a></h3>
+          <h3><b>Github:</b> <a href="{{cc.html_url}}" style="color:blue; font-size:20px;">{{cc.githubUser}}</a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <ng-view></ng-view> -->
   </body>
 </html>

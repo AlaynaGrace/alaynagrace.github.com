@@ -1,33 +1,43 @@
 a{
   /*margin-left: 0.5px;*/
-  margin-bottom: 10px;
-  border: 5px solid grey;
-  border-radius: 4px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: grey;
-  color: honeydew;
+  /*margin-bottom: 10px;*/
+  border: 5px solid white;
+  /*border-radius: 4px;*/
+  /*border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;*/
+  background-color: white;
+  color: black;
   text-decoration: none;
-  border-bottom: 1px solid grey;
-  font-size: 20px;
+  /*border-bottom: 1px solid grey;*/
+  font-size: 15px;
 }
 a:focus,a:active{
   color: grey;
   text-decoration: none;
-  background-color: white;
+  background-color: lightgrey;
   border: 5px solid white;
   border-radius: 4px;
 }
 a:hover{
-  color:lightgrey;
+  color: lightgrey;
   text-decoration: none;
+  /*background-color: whitesmoke;
+  border: 5px solid whitesmoke;*/
 }
 
 .links{
   text-align: center;
+  background-color: white;
+  padding: 1%;
+  text-decoration: none;
 }
 .jumbotron{
   text-align: center;
+  /*background-image: url('img/headshot.png');*/
+  /*background-size: contain;*/
+  background-color: #dfe1e0;
+  background-size: cover;
+  height: 500px;
 }
 
 .repos{
@@ -40,17 +50,20 @@ a:hover{
 }
 .repos:hover,.repos:focus,.repos:active{
   color: grey;
+  /*text-decoration: none;*/
 }
 
 img{
-  width: 50%;
-  height:50%;
+  width: 60%;
+  height:60%;
   display: block;
   margin: 0 auto;
   border-radius: 16px;
 }
 .imgDiv{
   margin: 10px;
+  background-color: Azure;
+  background-image: url('https://www.xmple.com/wallpaper/streaks-stripes-lines-blue-1920x1080-c2-e0ffff-afeeee-l2-76-107-a-60-f-1.svg');
 }
 .textDiv{
   background-color: white;
@@ -59,15 +72,37 @@ img{
   border-radius: 16px;
 }
 body{
-  background-color: honeydew;
+  background-color: white;
   font-family: 'Roboto Slab', serif;
+  color: black;
 }
 h2{
   text-align: center;
 }
 .about{
-  background-color: honeydew;
-  border: 50px solid honeydew;
+  background-color: white;
+  border: 50px solid white;
   border-top: 0px;
 
+}
+.experience{
+  background-color: grey;
+}
+.education{
+  background-size: cover;
+  padding: 15%;
+  background-image: url('http://www.lcchamber.com/wp-content/uploads/2016/07/education-3.jpg');
+}
+
+h1{
+  color: black;
+  text-align: center;
+  padding-top: 5%;
+  /*padding-bottom: 5%;*/
+  font-size: 80px;
+  /*font-family: 'Megrim', cursive;*/
+}
+h4{
+  text-align: center;
+  padding-bottom: 2.5%;
 }
