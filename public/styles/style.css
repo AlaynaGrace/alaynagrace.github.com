@@ -26,11 +26,16 @@ a:hover{
 }
 
 .links{
-  /*position: fixed;*/
+  position: fixed;
   text-align: center;
   background-color: white;
   padding: 1%;
+  width: 100%;
   text-decoration: none;
+}
+.top-bar{
+  background-color: white;
+  padding: 1.1%;
 }
 .jumbotron{
   text-align: center;
